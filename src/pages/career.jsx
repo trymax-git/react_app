@@ -4,7 +4,7 @@ function Career() {
     return (
         <div className="career__content--container">
             <h3>Карьера</h3>
-            <NavLink to={"/engineer"}> <p>– Ведущий инженер в отдел технической поддержки СВТ</p> </NavLink>
+            <NavLink to={"engineer"}> <p>– Ведущий инженер в отдел технической поддержки СВТ</p> </NavLink>
         </div>
     )
 }

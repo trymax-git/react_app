@@ -12,11 +12,11 @@ function App() {
       <Header />
       <main>
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/career" element={<Career />} />
-          <Route path="/track" element={<Track />} />
-          <Route path="/contacts" element={<Contacts />} />
-          <Route path="/engineer" element={<Engineer />} />
+          <Route exact path="/react_app" element={<Home />} />
+          <Route path="career" element={<Career />} />
+          <Route path="track" element={<Track />} />
+          <Route path="contacts" element={<Contacts />} />
+          <Route path="engineer" element={<Engineer />} />
         </Routes>
       </main>
       <Footer />
