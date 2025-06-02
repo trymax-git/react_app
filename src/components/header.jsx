@@ -7,9 +7,9 @@ function Header() {
             <NavLink to={"/react_app"}><img src={companyLogo} alt="logo" /></NavLink>
             <div className="header__links-container">
                 <NavLink to={"/react_app"}>Главная</NavLink>
-                <NavLink to={"career"}>Карьера</NavLink>
-                <NavLink to={"track"}>Трекматика</NavLink>
-                <NavLink to={"contacts"}>Контакты</NavLink>
+                <NavLink to={"/react_app/career"}>Карьера</NavLink>
+                <NavLink to={"/react_app/track"}>Трекматика</NavLink>
+                <NavLink to={"/react_app/contacts"}>Контакты</NavLink>
             </div>
         </header>
     )

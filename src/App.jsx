@@ -13,10 +13,10 @@ function App() {
       <main>
         <Routes>
           <Route exact path="/react_app" element={<Home />} />
-          <Route path="career" element={<Career />} />
-          <Route path="track" element={<Track />} />
-          <Route path="contacts" element={<Contacts />} />
-          <Route path="engineer" element={<Engineer />} />
+          <Route path="/react_app/career" element={<Career />} />
+          <Route path="/react_app/track" element={<Track />} />
+          <Route path="/react_app/contacts" element={<Contacts />} />
+          <Route path="/react_app/engineer" element={<Engineer />} />
         </Routes>
       </main>
       <Footer />
