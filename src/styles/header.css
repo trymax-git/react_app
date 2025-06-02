@@ -1,0 +1,19 @@
+header {
+  background-color: var(--primary-color);
+  display: flex;
+  padding: 2em 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__links-container a {
+  padding: 1em;
+  color: var(--bg-color);
+}
+
+.header__links-container a:hover {
+  transition: 1s;
+  border: 1px solid var(--bg-color);
+  border-style: none none solid none;
+}

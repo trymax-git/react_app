@@ -1,0 +1,10 @@
+.contacts__content-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1280px;
+    padding: 2em 0em;
+    width: 100%;
+    margin-inline: auto;
+}

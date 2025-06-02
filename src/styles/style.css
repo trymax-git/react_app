@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+
+html, body {
+  height: 100%;
+}
+
+* {
+  font-family: "Jost", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  list-style: none;
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 22.67px;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+:root {
+  --secondsry-color: #1447e6;
+  --primary-color: #193cb8;
+  --text-color: #000000;
+  --bg-color: #ffffff;
+  --button-color: #EDEDED;
+}

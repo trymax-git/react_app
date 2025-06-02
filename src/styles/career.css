@@ -1,0 +1,12 @@
+.career__content--container {
+    display: flex;
+    width: 1280px;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-inline: auto;
+}
+
+.career__content--container p {
+    color: var(--text-color);
+}
