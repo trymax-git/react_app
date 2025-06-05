@@ -14,5 +14,6 @@ header {
 }
 
 .header__links-container a:hover {
-  font-size: larger;
+  display: inline-block;
+  transform: scale(1.1);
 }

@@ -4,3 +4,26 @@
     margin-inline: auto;
     padding: 1em 0;
 }
+
+.kmsmain__container--placement p {
+    padding: 1em 0;
+}
+
+/* Table */
+
+.kms__table--placement {
+    width: 100%;
+    border: 1px solid var(--text-color);
+    border-style: none none solid solid;
+    padding: 1em;
+    margin: 0 0 2em 0;
+}
+
+.table__element--placement {
+    text-align: center;
+}
+
+.table__header--font {
+    font-size: larger;
+    font-weight: bolder;
+}
