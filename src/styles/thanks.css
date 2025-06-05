@@ -1,0 +1,19 @@
+.thanks__container--border {
+    max-width: 1280px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 1em 0;
+}
+
+.thanks__container--border p {
+    padding: 1em 0;
+}
+
+.thanks__imgconteiner--placement {
+    display: flex;
+    justify-content: center;
+}
+
+.thanks__imgconteiner--placement img {
+    max-width: 600px;
+}

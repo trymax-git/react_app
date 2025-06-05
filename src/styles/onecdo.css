@@ -1,0 +1,18 @@
+.onecdo__container--border {
+    max-width: 1280px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.onecdo__container--border p {
+    padding: 1em 0;
+}
+
+.onecdo__container--border ul li {
+    list-style: inside;
+}

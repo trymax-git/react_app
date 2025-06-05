@@ -3,17 +3,16 @@ header {
   display: flex;
   padding: 2em 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .header__links-container a {
   padding: 1em;
   color: var(--bg-color);
+  transition: 0.5s;
 }
 
 .header__links-container a:hover {
-  transition: 1s;
-  border: 1px solid var(--bg-color);
-  border-style: none none solid none;
+  font-size: larger;
 }

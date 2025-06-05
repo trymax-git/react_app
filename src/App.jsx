@@ -6,6 +6,10 @@ import Career from './pages/career';
 import Track from './pages/track';
 import Contacts from './pages/contacts';
 import Engineer from './pages/engineer';
+import Tadviser from './pages/tadviser';
+import Thanks from './pages/thanks';
+import Onecdo from './pages/onecdo';
+import Kms from './pages/kms';
 function App() {
   return (
     <Router>
@@ -17,6 +21,10 @@ function App() {
           <Route path="/react_app/track" element={<Track />} />
           <Route path="/react_app/contacts" element={<Contacts />} />
           <Route path="/react_app/engineer" element={<Engineer />} />
+          <Route path="/react_app/tadviser" element={<Tadviser />} />
+          <Route path="/react_app/thanks" element={<Thanks />} />
+          <Route path="/react_app/onecdo" element={<Onecdo />} />
+          <Route path="/react_app/kms" element={<Kms />} />
         </Routes>
       </main>
       <Footer />

@@ -1,17 +1,55 @@
-// function Home() {
-//     return (
-//         <><p>Home</p></>
-//     )
-// }
-
-// export default Home;
-
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from 'react';
-import sliderimg1 from '../assets/sliderimg1.png';
-import sliderimg2 from '../assets/sliderimg2.png';
-import sliderimg3 from '../assets/sliderimg3.png';
+import sliderimg1 from '../assets/sliderimg1.webp';
+import sliderimg2 from '../assets/sliderimg2.webp';
+import sliderimg3 from '../assets/sliderimg3.webp';
 import resultsPdf from "../assets/resultsfile.pdf";
+import trackmaticPdf from "../assets/trackmatic.pdf";
+import news from "../assets/news.png";
+import news1 from "../assets/news1.png";
+import portfolio from "../assets/portfolio.png";
+import portfolio1 from "../assets/portfolio1.png";
+import chaz from "../assets/chaz.svg";
+import chetez from "../assets/chetez.svg";
+import chetra from "../assets/chetra.svg";
+import kavkaz from "../assets/kavkaz.svg";
+import promtraktor from "../assets/promtraktor.svg";
+import itsoft from "../assets/itsoft.svg";
+import smr from "../assets/smr.svg";
+import onec from "../assets/onec.svg";
+import onecbitrix from "../assets/onecbitrix.svg";
+import itilium from "../assets/itilium.svg";
+
+const CookieConsent = () => {
+    const [visible, setVisible] = useState(false);
+
+    useEffect(() => {
+        const consent = localStorage.getItem('cookieConsent');
+        if (consent !== 'accepted') {
+            setVisible(true);
+        }
+    }, []);
+
+    const acceptCookies = () => {
+        localStorage.setItem('cookieConsent', 'accepted');
+        setVisible(false);
+    };
+
+    if (!visible) return null;
+
+    return (
+        <div className="cookie-consent">
+            <div className="cookie-consent-content">
+                <p>
+                    Мы используем файлы cookie для улучшения работы сайта.
+                    Продолжая использовать сайт, вы соглашаетесь с этим.
+                </p>
+                <button onClick={acceptCookies}>Понятно</button>
+            </div>
+        </div>
+    );
+};
+
 
 // Компоненты для разного контента
 const Content1 = () => <div className="content">
@@ -36,9 +74,77 @@ const Content1 = () => <div className="content">
             target="_blank"
             rel="noopener noreferrer"
         >
-
             Данные о результатах специальной оценки условий труда
         </a>
+    </div>
+    <div className="about__midside-text-sec">
+        <h3>Парк обслуживаемого оборудования</h3>
+        <p>ОИК предоставляет клиентам услуги по предоставлению АРМ, ПУ и ИТ  Инфраструктуры в качестве сервисов на базе тарификации предоставляется в пользование клиентам более 10 тысяч единиц оборудования (системные  блоки, принтеры, сканеры, МФУ, мониторы, проекторы, средства  видеоконференцсвязи), услуги коллокейшн, SAAS и др.</p>
+        <h3>SLA</h3>
+        <p>Мы предоставляем нашим клиентам возможность выбрать уровень поддержки по SLA. Поддержка по SLA – это специализированный сервис поддержки  конечных потребителей услуг. Сервис позволяет получить ожидаемый  результат от сопровождения информационных систем по фиксированной цене и в конкретные сроки.</p>
+        <p>Техподдержка корпоративных систем осуществляется в соответствии с  Международными отраслевыми стандартами ITIL (IT Infrastructure Library)  по соглашению об уровне сервиса SLA (Service Level Agreement).</p>
+        <h3>ServiceDesk</h3>
+        <p>Служба работает по модели предоставления услуги бизнесу: состав,  список требований и уровень сервиса может быть описан в SLA. С точки  зрения потребителя, Service Desk представляет собой внешнюю компанию,  которая оказывает ИТ-услуги как и любая сервисная компания. Во многих  организациях потребителем услуг Service Desk могут быть не только  клиенты, но и собственные сотрудники. Пользователи Service Desk  взаимодействуют со специалистами через различные каналы: email, телефон, портал самообслуживания, мобильное приложение, мессенджеры.</p>
+    </div>
+    <div className="about__midside-text-sec">
+        <h3>Импортозамещение</h3>
+        <p>В рамках национальной программы импортозамещения, наша Компания  готова проанализировать и при наличии возможности осуществить переход на импортозамещенное ПО и оборудования для рабочих.</p>
+    </div>
+    <div className="about__midside-text-sec">
+        <h3>Аккредитация</h3>
+        <p>Компания входит в реестр аккредитованных ИТ-компаний России и имеет различные льготы от государства.</p>
+        <a
+            className={"link__about-results"}
+            href={trackmaticPdf}
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Свидетельство о государственной регистрации программы для ЭВМ Трекматика
+        </a>
+    </div>
+    <div className="news__section">
+        <h3>Новости</h3>
+        <div className="news__container">
+            <NavLink to={"/react_app/thanks"}>
+                <div className="about__news-container">
+                    <img src={news1} alt="news1" />
+                    <div className="about__news">
+                        <p>16 мая 2022</p>
+                        <p>Благодарственное письмо</p>
+                    </div>
+                </div>
+            </NavLink>
+            <NavLink to={"/react_app/tadviser"}>
+                <div className="about__news-container">
+                    <img src={news} alt="news" />
+                    <div className="about__news">
+                        <p>19 мая 2022</p>
+                        <p>Участие в конференции TAdviser SummIT</p>
+                    </div>
+                </div>
+            </NavLink>
+        </div>
+    </div>
+    <div className="news__section">
+        <h3>Портфолио</h3>
+        <div className="news__container">
+            <NavLink to={"/react_app/onecdo"}>
+                <div className="about__news-container">
+                    <img src={portfolio1} alt="portfolio1" />
+                    <div className="about__news">
+                        <p>1C ДО</p>
+                    </div>
+                </div>
+            </NavLink>
+            <NavLink to={"/react_app/kms"}>
+                <div className="about__news-container">
+                    <img src={portfolio} alt="portfolio" />
+                    <div className="about__news">
+                        <p>KMC</p>
+                    </div>
+                </div>
+            </NavLink>
+        </div>
     </div>
 </div>;
 
@@ -59,14 +165,81 @@ const Content2 = () => <div className="content">
     <p>– консультационная поддержка</p>
 </div>;
 
-const Content3 = () => <div className="content">Контент 3</div>;
+const Content3 = () => <div className="content">
+    <div className="clients__section">
+        <div className="clients__card--size">
+            <img src={smr} alt="smr" />
+            <div className="clients__card--blure">
+                <h3>Союз Машиностроителей</h3>
+                <p>Общероссийская общественная организация «Союз машиностроителей России» зарегистрирована Федеральной регистрационной службой Российской Федерации. Основной целью деятельности Союза является формирование стратегии развития отрасли, а также участие в формировании механизмов активной государственной политики по поддержке национального машиностроительного комплекса на уровне ведущих промышленно развитых стран. Союз представляет интересы около трех миллионов трудящихся, занятых в различных сферах машиностроения.</p>
+            </div>
+        </div>
+        <div className="clients__card--size">
+            <img src={chetra} alt="chetra" />
+            <div className="clients__card--blure">
+                <h3>ООО «ЧЕТРА»</h3>
+                <p>ООО «ЧЕТРА» – российская компания, эксклюзивно реализующая технику промышленного назначения и запасные части под брендом «ЧЕТРА» производства завода «Промтрактор», а также эксклюзивно поставляющая запасные части и комплектующие под брендом «ЧАЗ» производства ООО «ПК «ЧАЗ».</p>
+                <p>Техника под брендом «ЧЕТРА» используется при строительстве крупнейших производственных площадок, морских портов, освоении месторождений природных ископаемых и прокладке трубопроводов в 30 странах мира и во всех климатических зонах. Свыше 3 000 единиц техники под брендом «ЧЕТРА» находится сегодня в эксплуатации на территории Российской Федерации и за ее пределами.</p>
+            </div>
+        </div>
+        <div className="clients__card--size">
+            <img src={kavkaz} alt="kavkaz" />
+            <div className="clients__card--blure">
+                <h3>ООО «КАВАЗ»</h3>
+                <p>ООО «КАВАЗ» (полное название предприятия - общество с ограниченной ответственностью «Канашский вагоностроительный завод») - одно из самых старейших предприятий Чувашской республики.</p>
+                <p>Предприятие входит в структуру Концерна «Тракторные заводы».</p>
+                <p>Дата основания завода – 16 июня 1936 года. Расположен в городе Канаше Чувашской Республики, являющемся одним из крупных железнодорожных узлов в центре Поволжья. Предприятие начинало свою историю с ремонта грузовых вагонов. В 50-е годы XX века Канашский вагоноремонтный завод в числе первых в системе ремонтных предприятий железнодорожного транспорта страны освоил поточно-конвейерный метод ремонта вагонов.</p>
+            </div>
+        </div>
+        <div className="clients__card--size">
+            <img src={promtraktor} alt="promtraktor" />
+            <div className="clients__card--blure">
+                <h3>ООО «ПК «Промтрактор»</h3>
+                <p>«Производственная компания «Промтрактор» – это крупнейший производитель бульдозерно-рыхлительной и трубоукладочной техники. Предприятие специализируется на тракторах 9, 11, 15, 20, 25, 35, 40 и 50 классов.</p>
+            </div>
+        </div>
+        <div className="clients__card--size">
+            <img src={chetez} alt="chetez" />
+            <div className="clients__card--blure">
+                <h3>ООО «ПК «ЧТЗ»</h3>
+                <p>Производство машин и оборудования для добычи полезных ископаемых и строительства.</p>
+            </div>
+        </div>
+        <div className="clients__card--size">
+            <img src={chaz} alt="chaz" />
+            <div className="clients__card--blure">
+                <h3>ООО «ПК «ЧАЗ»</h3>
+                <p>Производство прочих комплектующих и принадлежностей для автотранспортных средств.</p>
+            </div>
+        </div>
+        <div className="clients__card--size">
+            <img src={itsoft} alt="itsoft" />
+            <div className="clients__card--blure">
+                <h3>ИТ-Софт</h3>
+                <p>«ИТ-Софт» - многопрофильная компания, которая специализируется на разработке программных продуктов и ИТ-решений для частного бизнеса и государственных структур.</p>
+            </div>
+        </div>
+    </div>
+</div>;
 
-const Content4 = () => <div className="content">Контент 4</div>;
+const Content4 = () => <div className="content">
+    <div className="partnership__container--placement">
+        <div className="card__container--sizing">
+            <img src={itilium} alt="itilium" />
+        </div>
+        <div className="card__container--sizing">
+            <img src={onec} alt="onec" />
+        </div>
+        <div className="card__container--sizing">
+            <img src={onecbitrix} alt="onecbitrix" />
+        </div>
+    </div>
+</div>;
 
 
 function Home() {
     const [currentSlide, setCurrentSlide] = useState(0);
-    const [activeContent, setActiveContent] = useState(1); // Добавлен хук состояния
+    const [activeContent, setActiveContent] = useState(1);
 
     const slides = [sliderimg1, sliderimg2, sliderimg3];
 
@@ -98,8 +271,9 @@ function Home() {
                         className={`slide ${index === currentSlide ? 'active' : ''}`}
                         style={{
                             backgroundImage: `url(${slide})`,
-                            width: '1920px',
-                            height: '956px'
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover'
                         }}
                     />
                 ))}
@@ -110,13 +284,15 @@ function Home() {
                 <button onClick={() => setActiveContent(1)}>О компании</button>
                 <button onClick={() => setActiveContent(2)}>Услуги</button>
                 <button onClick={() => setActiveContent(3)}>Клиенты</button>
-                <button onClick={() => setActiveContent(4)}>Спонсоры</button>
+                <button onClick={() => setActiveContent(4)}>Партнеры</button>
             </div>
 
             {/* Отображаемый контент */}
             <div className="dynamic-content">
                 {renderContent()}
             </div>
+
+            <CookieConsent />
         </div>
     );
 }

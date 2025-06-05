@@ -5,6 +5,7 @@ footer {
     padding: 2em;
     height: 224px;
     gap: 8em;
+    color: var(--bg-color);
 }
 
 .footer__links-section {
@@ -41,4 +42,9 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.footer__links-section img {
+    width: 2rem;
+    height: 2rem;
 }

@@ -2,8 +2,8 @@
 
 .slider-container {
     position: relative;
-    width: 1864px;
-    height: 956px;
+    width: 100%;
+    height: calc(100vh - 138.667px);
     overflow: hidden;
     background-color: var(--primary-color);
 }
@@ -47,7 +47,7 @@
 }
 
 .content-buttons button:hover {
-    background-color: var(--primary-color);
+    background-color: var(--secondsry-color);
     transition: 0.75s;
     color: var(--bg-color);
 }
@@ -84,4 +84,147 @@
 
 .link__about-results {
     color: var(--primary-color);
+}
+
+.about__midside-text-sec {
+    border: 1px solid var(--text-color);
+    border-style: none none solid none;
+    padding-bottom: 1em;
+}
+
+/* News */
+
+.news__section {
+    margin-top: 1em;
+}
+
+.about__news {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    color: var(--text-color);
+    padding: 0.5em;
+    margin: 0.5em;
+    background-color: var(--button-color);
+}
+
+.news__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__news-container {
+    position: relative;
+    height: 296px;
+    border: 1px solid var(--primary-color);
+}
+
+/* Clients */
+
+.clients__section {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.clients__card--size {
+    position: relative;
+    border: 1px solid var(--primary-color);
+    padding: 1em;
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.clients__card--size img {
+    width: 370px;
+    height: 118px;
+}
+
+.clients__card--blure {
+    position: absolute;
+    padding: 1em;
+    background-color: var(--secondsry-color);
+    color: var(--bg-color);
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.clients__card--size:hover .clients__card--blure {
+    opacity: 1;
+}
+
+.clients__card--size:hover {
+    border: 1px solid var(--bg-color);
+}
+
+/* Partnership */
+
+.card__container--sizing img {
+    width: 370px;
+    height: 118px;
+}
+
+.card__container--sizing {
+    border: 1px solid var(--primary-color);
+    width: 408px;
+    height: 156px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partnership__container--placement {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Cookie */
+
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--button-color);
+  color: var(--text-color);
+  padding: 1em;
+  z-index: 9999;
+  border: 1px solid var(--text-color);
+}
+
+.cookie-consent-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.cookie-consent button {
+  background: var(--primary-color);
+  color: var(--bg-color);
+  border: none;
+  padding: 0.5em;
+  border-radius: 4px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.cookie-consent button:hover {
+  background: var(--secondsry-color);
+}
+
+@media (max-width: 600px) {
+  .cookie-consent-content {
+    flex-direction: column;
+    text-align: center;
+  }
 }

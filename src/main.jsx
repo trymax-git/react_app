@@ -8,6 +8,10 @@ import './styles/track.css'
 import './styles/contacts.css'
 import './styles/home.css'
 import './styles/engineer.css'
+import './styles/tadviser.css'
+import './styles/thanks.css'
+import './styles/onecdo.css'
+import './styles/kms.css'
 
 import App from './App.jsx'
 
