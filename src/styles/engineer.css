@@ -16,3 +16,21 @@
 .engineer__content-header {
     padding-bottom: 1em;
 }
+
+@media (max-width: 768px) {
+  .engineer__content-container {
+    max-width: 752px;
+}
+}
+
+@media (max-width: 425px) {
+  .engineer__content-container {
+    max-width: 409px;
+  }
+}
+
+@media (max-width: 375px) {
+  .engineer__content-container {
+    max-width: 359px;
+  }
+}

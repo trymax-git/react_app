@@ -16,3 +16,21 @@
 .onecdo__container--border ul li {
     list-style: inside;
 }
+
+@media (max-width: 768px) {
+  .onecdo__container--border {
+    max-width: 752px;
+  }
+}
+
+@media (max-width: 425px) {
+  .onecdo__container--border {
+    max-width: 409px;
+  }
+}
+
+@media (max-width: 375px) {
+  .onecdo__container--border {
+    max-width: 359px;
+  }
+}

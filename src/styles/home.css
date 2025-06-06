@@ -63,6 +63,24 @@
     margin-inline: auto;
 }
 
+@media (max-width: 768px) {
+  .content-buttons {
+    max-width: 752px;
+  }
+}
+
+@media (max-width: 425px) {
+  .content-buttons {
+    max-width: 409px;
+  }
+}
+
+@media (max-width: 375px) {
+  .content-buttons {
+    max-width: 359px;
+  }
+}
+
 /* About */
 
 .about__upside-sec {
@@ -115,8 +133,50 @@
 
 .about__news-container {
     position: relative;
-    height: 296px;
+    height: 97.5%;
     border: 1px solid var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .about__news-container img {
+    width: 100%;
+  }
+
+  .news__container a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about__news-container {
+    width: 90%;
+    height: 95.9%;
+  }
+
+  .about__news {
+    /* position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+    color: var(--text-color);
+    padding: 0.5em;
+    margin: 0.1em;
+    background-color: var(--button-color); */
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .about__news-container {
+    width: 90%;
+    height: 92.4%;
+  }
+}
+
+@media (max-width: 375px) {
+  .about__news-container {
+    width: 90%;
+    height: 94%;
+  }
 }
 
 /* Clients */
@@ -161,6 +221,18 @@
     border: 1px solid var(--bg-color);
 }
 
+@media (max-width: 768px) {
+  .clients__section {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .clients__card--size img {
+    width: 331px;
+  }
+}
+
 /* Partnership */
 
 .card__container--sizing img {
@@ -183,6 +255,19 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+@media (max-width: 768px) {
+  .partnership__container--placement {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .card__container--sizing img {
+    width: 331px;
+  }
+}
+
 
 /* Cookie */
 
@@ -222,8 +307,10 @@
   background: var(--secondsry-color);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .cookie-consent-content {
+    max-width: 768px;
+    margin: 0;
     flex-direction: column;
     text-align: center;
   }

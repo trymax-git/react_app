@@ -8,3 +8,33 @@
     width: 100%;
     margin-inline: auto;
 }
+
+@media (max-width: 768px) {
+  .contacts__content-container {
+    max-width: 752px;
+  }
+
+  .contacts__content-container iframe {
+    max-width: 752px;
+  }
+}
+
+@media (max-width: 425px) {
+  .contacts__content-container {
+    max-width: 409px;
+  }
+
+  .contacts__content-container iframe {
+    max-width: 409px;
+  }
+}
+
+@media (max-width: 375px) {
+  .contacts__content-container {
+    max-width: 359px;
+  }
+
+  .contacts__content-container iframe {
+    max-width: 359px;
+  }
+}

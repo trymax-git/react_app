@@ -10,3 +10,22 @@
 .career__content--container p {
     color: var(--text-color);
 }
+
+@media (max-width: 768px) {
+  .career__content--container {
+    max-width: 752px;
+    padding: 50% 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .career__content--container {
+    max-width: 409px;
+  }
+}
+
+@media (max-width: 375px) {
+  .career__content--container {
+    max-width: 359px;
+  }
+}

@@ -13,3 +13,29 @@
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+  .tadviser__container--border {
+    max-width: 752px;
+  }
+}
+
+@media (max-width: 425px) {
+  .tadviser__container--border {
+    max-width: 409px;
+  }
+
+  .tadviser__imgconteiner--placement img {
+    max-width: 409px;
+  }
+}
+
+@media (max-width: 375px) {
+  .tadviser__container--border {
+    max-width: 359px;
+  }
+
+  .tadviser__imgconteiner--placement img {
+    max-width: 359px;
+  }
+}

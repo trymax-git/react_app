@@ -17,3 +17,29 @@
 .thanks__imgconteiner--placement img {
     max-width: 600px;
 }
+
+@media (max-width: 768px) {
+  .thanks__container--border {
+    max-width: 752px;
+  }
+}
+
+@media (max-width: 425px) {
+  .thanks__container--border {
+    max-width: 409px;
+  }
+
+  .thanks__imgconteiner--placement img {
+    max-width: 409px;
+  }
+}
+
+@media (max-width: 375px) {
+  .thanks__container--border {
+    max-width: 359px;
+  }
+
+  .thanks__imgconteiner--placement img {
+    max-width: 359px;
+  }
+}

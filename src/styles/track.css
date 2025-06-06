@@ -15,3 +15,21 @@
 .trackmatic__content-container p {
     padding: 1em 0;
 }
+
+@media (max-width: 768px) {
+  .trackmatic__content-container {
+    max-width: 752px;
+}
+}
+
+@media (max-width: 425px) {
+  .trackmatic__content-container {
+    max-width: 409px;
+  }
+}
+
+@media (max-width: 375px) {
+  .trackmatic__content-container {
+    max-width: 359px;
+  }
+}
