@@ -31,10 +31,10 @@
 
 @media (max-width: 375px) {
   .contacts__content-container {
-    max-width: 359px;
+    max-width: 351px;
   }
 
   .contacts__content-container iframe {
-    max-width: 359px;
+    max-width: 351px;
   }
 }

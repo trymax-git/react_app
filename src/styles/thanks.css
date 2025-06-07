@@ -36,10 +36,10 @@
 
 @media (max-width: 375px) {
   .thanks__container--border {
-    max-width: 359px;
+    max-width: 351px;
   }
 
   .thanks__imgconteiner--placement img {
-    max-width: 359px;
+    max-width: 351px;
   }
 }

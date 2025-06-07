@@ -32,10 +32,10 @@
 
 @media (max-width: 375px) {
   .tadviser__container--border {
-    max-width: 359px;
+    max-width: 351px;
   }
 
   .tadviser__imgconteiner--placement img {
-    max-width: 359px;
+    max-width: 351px;
   }
 }
